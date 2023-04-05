@@ -5,26 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d838065-912c-4bc4-b5b3-b105fd3442af" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/common/context/Context.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/context/Context.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Produto/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Produto/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Produto/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Produto/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Carrinho/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Carrinho/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Carrinho/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Carrinho/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Feira/NavBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Feira/NavBar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Feira/NavBar/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Feira/NavBar/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Feira/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Feira/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Feira/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Feira/styles.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Login/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Login/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +52,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "D:\\projetos\\react estudos\\context-api\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "editor.preferences.gutterIcons",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
     "ts.external.directory.path": "C:\\Users\\josee\\AppData\\Local\\JetBrains\\Toolbox\\apps\\IDEA-U\\ch-0\\223.8836.41\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -110,11 +96,24 @@
       <workItem from="1680484479403" duration="284000" />
       <workItem from="1680486172900" duration="48000" />
       <workItem from="1680524365248" duration="2730000" />
+      <workItem from="1680647374372" duration="2487000" />
+      <workItem from="1680651848314" duration="3214000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

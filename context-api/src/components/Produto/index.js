@@ -19,7 +19,7 @@ function Produto({ nome, foto, id, valor, unidade }) {
         </p>
       </div>
       <div>
-        <IconButton color="secondary" onClick={() => removeProduto(id)}>
+        <IconButton disabled={!produtoCarrinho} color="secondary" onClick={() => removeProduto(id)}>
           <RemoveIcon />
         </IconButton>
         {produtoCarrinho?.quantidade || 0}
