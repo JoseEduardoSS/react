@@ -9,15 +9,16 @@ import {
 } from "./styles";
 import { useCarrinhoContext } from "../../common/context/Context";
 import Produto from "../../components/Produto";
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Carrinho() {
   const [openSnackbar, setOpenSnackbar] = useState(false);
   const { carrinho } = useCarrinhoContext();
+  const { formaPagamento } = useCarrinhoContext();
   const navigate = useNavigate();
   return (
     <Container>
-      <Voltar/>
+      <Voltar onClick={() => navigate("/feira")} />
       <h2>Carrinho</h2>
       {carrinho.map((produto) => {
         return <Produto {...produto} key={produto.id} />;

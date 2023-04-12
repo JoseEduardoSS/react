@@ -8,6 +8,13 @@ export const ContextProvider = ({ children }) => {
   const [saldo, setSaldo] = useState(0);
   const [carrinho, setCarrinho] = useState([]);
   const [qtdProdutos, setQtdProdutos] = useState(0);
+  const tiposPagamento = [
+    { id: 1, nome: "boleto", juros: 1 },
+    { id: 2, nome: "cartão de crédito", juros: 1.3 },
+    { id: 3, nome: "pix", juros: 1 },
+    { id: 4, nome: "crediário", juros: 1.5 },
+  ];
+  const [formaPagamento, setFormaPagamento] = useState(tiposPagamento[0]);
 
   return (
     <Context.Provider
@@ -20,6 +27,9 @@ export const ContextProvider = ({ children }) => {
         setCarrinho,
         qtdProdutos,
         setQtdProdutos,
+        formaPagamento,
+        setFormaPagamento,
+        tiposPagamento,
       }}
     >
       {children}
@@ -73,5 +83,18 @@ export const useCarrinhoContext = () => {
     setQtdProdutos(qtdProdutos);
   }, [carrinho, setQtdProdutos]);
 
-  return { carrinho, setCarrinho, addProduto, removeProduto, qtdProdutos, setQtdProdutos };
+  return {
+    carrinho,
+    setCarrinho,
+    addProduto,
+    removeProduto,
+    qtdProdutos,
+    setQtdProdutos,
+  };
+};
+
+export const usePagamentoContext = () => {
+  const { tipoPagamento, formaPagamento, setFormaPagamento } =
+    useContext(Context);
+  return { tipoPagamento, formaPagamento, setFormaPagamento };
 };
