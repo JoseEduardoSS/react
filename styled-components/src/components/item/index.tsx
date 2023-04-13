@@ -1,19 +1,13 @@
 import React from "react";
-import { ItemStyled } from "./Styles";
+import {ItemStyled} from "./Styles";
 
 // @ts-ignore
-const Item = ({type, from, value}) => {
+const Item = ({ type, from, value }) => {
   return (
     <ItemStyled>
-      <span className="text">
-        {type}
-      </span>
-      <span>
-        {from}
-      </span>
-      <span>
-        {value}
-      </span>
+      <span className="text">{type}</span>
+      <span>{from}</span>
+      <span>{value}</span>
     </ItemStyled>
   );
 };

@@ -7,7 +7,7 @@ import olho_icone from "../../assets/images/olho.svg";
 // @ts-ignore
 import dinheiro from "../../assets/images/dinheiro.svg";
 // @ts-ignore
-import {Balance, Box, Button, Detail, Icon} from "../UI";
+import {Balance, Box, Button, Detail, Icon, IconTheme} from "../UI";
 // @ts-ignore
 import { IconMargin } from "./Styles";
 
@@ -24,7 +24,7 @@ const Conta = () => {
       <div style={{ fontSize: "26px", padding: "20px 0" }}>
         Saldo disponível{" "}
         <span>
-          <Icon src={dinheiro} alt="Ícone Saldo" />
+          <IconTheme src={dinheiro} alt="Ícone Saldo" />
         </span>
         {toggleState ? (
           <Balance>

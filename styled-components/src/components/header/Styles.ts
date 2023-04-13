@@ -26,7 +26,7 @@ export const ButtonHeader = styled.button`
   margin: 0 10px;
   font-weight: 600;
   border: 2px solid white;
-  
-  background: ${(props: Props) => props.primary ? "white" : primaryColor};
-  color: ${(props: Props) => props.primary ? primaryColor : "white"};
+
+  background: ${(props: Props) => (props.primary ? "white" : primaryColor)};
+  color: ${(props: Props) => (props.primary ? primaryColor : "white")};
 `;
