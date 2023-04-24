@@ -1,12 +1,16 @@
 import Menu from "./pages/menu";
+import { GlobalStyle } from "./GlobalStyle";
+import {ContextProvider} from "./common/context/context";
 
 function App() {
-
   return (
     <div className="App">
-      <Menu/>
+      <ContextProvider>
+        <GlobalStyle />
+        <Menu />
+      </ContextProvider>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
