@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { blue, grey } from "../../../styles/variables";
 
 type buttonProps = {
@@ -14,8 +14,8 @@ export const FilterStyled = styled.div`
 
 export const ButtonStyled = styled.button<buttonProps>`
   align-items: center;
-  background-color: ${(props) => props.active ? blue : grey};
-  color: ${(props) => props.active ? "#ffffff" : "#000000"};
+  background-color: ${(props) => (props.active ? blue : grey)};
+  color: ${(props) => (props.active ? "#ffffff" : "#000000")};
   border: none;
   border-radius: 4px;
   display: flex;

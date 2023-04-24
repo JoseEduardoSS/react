@@ -4,7 +4,6 @@ import Search from "./search";
 import Filter from "./filter";
 
 const Menu = () => {
-
   return (
     <main>
       <MenuStyled>

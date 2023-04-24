@@ -9,7 +9,7 @@ const Search = () => {
   return (
     <SearchStyled>
       <input value={search} onChange={(e) => setSearch(e.target.value)} />
-      <CgSearch size={20} color="#4c4d5e"/>
+      <CgSearch size={20} color="#4c4d5e" />
     </SearchStyled>
   );
 };

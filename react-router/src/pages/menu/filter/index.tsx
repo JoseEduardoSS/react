@@ -1,6 +1,6 @@
 import filters from "./filters.json";
-import {ButtonStyled, FilterStyled} from "./styles";
-import {useFilterContext} from "../../../common/context/context";
+import { ButtonStyled, FilterStyled } from "./styles";
+import { useFilterContext } from "../../../common/context/context";
 
 type option = {
   id: number;
@@ -8,7 +8,7 @@ type option = {
 };
 
 const Filter = () => {
-  const {filter, setFilter} = useFilterContext();
+  const { filter, setFilter } = useFilterContext();
 
   function selectFilter(option: option) {
     return setFilter(option.id);
@@ -17,7 +17,13 @@ const Filter = () => {
   return (
     <FilterStyled>
       {filters.map((option) => (
-        <ButtonStyled active={filter === option.id} key={option.id} onClick={() => selectFilter(option)}>{option.label}</ButtonStyled>
+        <ButtonStyled
+          active={filter === option.id}
+          key={option.id}
+          onClick={() => selectFilter(option)}
+        >
+          {option.label}
+        </ButtonStyled>
       ))}
     </FilterStyled>
   );
