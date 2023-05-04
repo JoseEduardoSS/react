@@ -8,7 +8,7 @@ const Search = () => {
 
   return (
     <SearchStyled>
-      <input value={search} onChange={(e) => setSearch(e.target.value)} />
+      <input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Buscar" />
       <CgSearch size={20} color="#4c4d5e" />
     </SearchStyled>
   );

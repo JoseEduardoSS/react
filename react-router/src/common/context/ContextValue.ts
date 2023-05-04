@@ -4,4 +4,7 @@ export class ContextValue {
 
   filter: null | number = null;
   setFilter: (value: null | number) => void = () => {};
+
+  organizer: string = "";
+  setOrganizer: (value: string) => void = () => {};
 }

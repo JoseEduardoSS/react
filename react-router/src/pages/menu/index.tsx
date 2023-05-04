@@ -1,7 +1,9 @@
-import { Cardapio, Header, MenuStyled } from "./styles";
+import { Cardapio, Filters, Header, MenuStyled } from "./styles";
 import Logo from "../../assets/logo";
 import Search from "./search";
 import Filter from "./filter";
+import Organizer from "./organizer";
+import Itens from "./itens";
 
 const Menu = () => {
   return (
@@ -15,9 +17,11 @@ const Menu = () => {
       <Cardapio>
         <h3>Cárdapio</h3>
         <Search />
-        <div>
+        <Filters>
           <Filter />
-        </div>
+          <Organizer />
+        </Filters>
+        <Itens />
       </Cardapio>
     </main>
   );

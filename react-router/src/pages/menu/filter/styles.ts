@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { blue, grey } from "../../../styles/variables";
 
-type buttonProps = {
+type active = {
   active: boolean;
 };
 
@@ -12,10 +12,10 @@ export const FilterStyled = styled.div`
   margin: 20px 0;
 `;
 
-export const ButtonStyled = styled.button<buttonProps>`
+export const ButtonStyled = styled.button<active>`
   align-items: center;
-  background-color: ${(props) => (props.active ? blue : grey)};
-  color: ${(props) => (props.active ? "#ffffff" : "#000000")};
+  background-color: ${active => active.active ? blue : grey};
+  color: ${active => active.active ? "#ffffff" : "#000000"};
   border: none;
   border-radius: 4px;
   display: flex;

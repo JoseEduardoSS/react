@@ -64,13 +64,13 @@ export const Cardapio = styled.section`
     font-size: 3rem;
     margin-bottom: 30px;
   }
+`;
 
-  > div + div {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
-    width: 100%;
-  }
+export const Filters = styled.div`
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  width: 100%;
 `;
