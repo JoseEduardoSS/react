@@ -1,6 +1,6 @@
-import filters from "./filters.json";
-import { ButtonStyled, FilterStyled } from "./styles";
-import { useFilterContext } from "../../../common/context/context";
+import filters from './filters.json';
+import { ButtonStyled, FilterStyled } from './styles';
+import { useFilterContext } from '../../../common/context/context';
 
 type option = typeof filters[0];
 

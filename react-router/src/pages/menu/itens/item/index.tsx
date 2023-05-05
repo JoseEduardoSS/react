@@ -8,8 +8,8 @@ import {
   Tags,
   Title,
   Type,
-} from "./styles";
-import itens from "../itens.json";
+} from './styles';
+import itens from '../itens.json';
 
 type props = typeof itens[0];
 

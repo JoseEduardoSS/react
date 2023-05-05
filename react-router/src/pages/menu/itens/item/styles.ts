@@ -1,15 +1,15 @@
-import styled from "styled-components";
-import { desktop_xsm, mobile } from "../../../../styles/breakpoints";
-import { darkGrey, red } from "../../../../styles/variables";
+import styled from 'styled-components';
+import { desktop_xsm, mobile } from '../../../../styles/breakpoints';
+import { darkGrey, red } from '../../../../styles/variables';
 
 type props = {
   type: string;
 };
 
-const massas = "#d73b3b";
-const carnes = "#30201e";
-const combos = "#e6c864";
-const veganos = "#80aa40";
+const massas = '#d73b3b';
+const carnes = '#30201e';
+const combos = '#e6c864';
+const veganos = '#80aa40';
 
 export const StyledItem = styled.div`
   display: flex;
@@ -86,21 +86,21 @@ export const Type = styled.div<props>`
   justify-content: center;
   padding: 10px 30px;
   background-color: ${(props: props) =>
-    props.type === "massas"
+    props.type === 'massas'
       ? massas
-      : props.type === "carnes"
-      ? carnes
-      : props.type === "combos"
-      ? combos
-      : veganos};
+      : props.type === 'carnes'
+        ? carnes
+        : props.type === 'combos'
+          ? combos
+          : veganos};
   color: ${(props: props) =>
-    props.type === "massas"
-      ? "#ffffff"
-      : props.type === "carnes"
-      ? "#ffffff"
-      : props.type === "combos"
-      ? "#000000"
-      : "#000000"};
+    props.type === 'massas'
+      ? '#ffffff'
+      : props.type === 'carnes'
+        ? '#ffffff'
+        : props.type === 'combos'
+          ? '#000000'
+          : '#000000'};
 `;
 
 export const Portion = styled.div`

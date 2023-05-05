@@ -1,7 +1,7 @@
-import React from "react";
-import { useSearchContext } from "../../../common/context/context";
-import { SearchStyled } from "./styles";
-import { CgSearch } from "react-icons/cg";
+import React from 'react';
+import { useSearchContext } from '../../../common/context/context';
+import { SearchStyled } from './styles';
+import { CgSearch } from 'react-icons/cg';
 
 const Search = () => {
   const { search, setSearch } = useSearchContext();

@@ -1,13 +1,13 @@
-import { createContext, ReactNode, useContext, useState } from "react";
-import { ContextValue } from "./ContextValue";
+import { createContext, ReactNode, useContext, useState } from 'react';
+import { ContextValue } from './ContextValue';
 
 export const Context = createContext(new ContextValue());
-Context.displayName = "Context";
+Context.displayName = 'Context';
 
 export const ContextProvider = ({ children }: { children: ReactNode }) => {
-  const [search, setSearch] = useState<string>("");
+  const [search, setSearch] = useState<string>('');
   const [filter, setFilter] = useState<null | number>(null);
-  const [organizer, setOrganizer] = useState<string>("");
+  const [organizer, setOrganizer] = useState<string>('');
 
   return (
     <Context.Provider
@@ -31,4 +31,4 @@ export const useFilterContext = () => {
 export const useOrganizerContext = () => {
   const { organizer, setOrganizer } = useContext(Context);
   return { organizer, setOrganizer };
-}
+};

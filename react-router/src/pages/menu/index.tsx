@@ -1,9 +1,9 @@
-import { Cardapio, Filters, Header, MenuStyled } from "./styles";
-import Logo from "../../assets/logo";
-import Search from "./search";
-import Filter from "./filter";
-import Organizer from "./organizer";
-import Itens from "./itens";
+import { Cardapio, Filters, Header, MenuStyled } from './styles';
+import Logo from '../../assets/logo';
+import Search from './search';
+import Filter from './filter';
+import Organizer from './organizer';
+import Itens from './itens';
 
 const Menu = () => {
   return (

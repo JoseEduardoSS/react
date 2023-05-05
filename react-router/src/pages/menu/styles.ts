@@ -1,12 +1,12 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
   dark,
   paddingH,
   paddingHMd,
   paddingHMobile,
   paddingHSm,
-} from "../../styles/variables";
-import { desktop_md, desktop_sm, desktop_xsm } from "../../styles/breakpoints";
+} from '../../styles/variables';
+import { desktop_md, desktop_sm, desktop_xsm } from '../../styles/breakpoints';
 
 export const MenuStyled = styled.nav`
   padding: 20px ${paddingH};

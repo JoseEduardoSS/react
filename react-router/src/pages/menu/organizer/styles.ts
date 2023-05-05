@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import {black, blue, grey, lightGrey} from "../../../styles/variables";
+import styled from 'styled-components';
+import {black, blue, grey, lightGrey} from '../../../styles/variables';
 
 type active = {
     active: boolean;
@@ -8,7 +8,7 @@ type active = {
 export const StyledOrganizer = styled.button<active>`
   align-items: center;
   background-color: ${active => active.active ? blue : grey};
-  color: ${buttonProps => buttonProps.active ? "#ffffff" : "#000000"};
+  color: ${buttonProps => buttonProps.active ? '#ffffff' : '#000000'};
   border: none;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;

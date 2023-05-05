@@ -1,12 +1,12 @@
-import menu from "./itens.json";
-import { StyledItens } from "./styles";
-import Item from "./item";
+import menu from './itens.json';
+import { StyledItens } from './styles';
+import Item from './item';
 import {
   useFilterContext,
   useOrganizerContext,
   useSearchContext,
-} from "../../../common/context/context";
-import { useEffect, useState } from "react";
+} from '../../../common/context/context';
+import { useEffect, useState } from 'react';
 
 type item = typeof menu[0];
 
@@ -17,9 +17,10 @@ const Itens = () => {
 
   const [list, setList] = useState<item[]>(menu);
 
-  function searchTest(title: string) {
+  function searchTest(item: item) {
     const regex = new RegExp(search, 'i');
-    return regex.test(title);
+    const searchIn = `${item.title} ${item.description}`;
+    return regex.test(searchIn);
   }
 
   function filterTest(id: number) {
@@ -27,12 +28,25 @@ const Itens = () => {
     return true;
   }
 
+  function organize(newList: typeof menu) {
+    switch (organizer) {
+    case 'porcao':
+      return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
+    case 'qtd_pessoas':
+      return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
+    case 'preco':
+      return newList.sort((a, b) => (a.price > b.price ? 1 : -1));
+    default:
+      return newList;
+    }
+  }
+
   useEffect(() => {
-    const newList = menu.filter((item: item) => {
-      searchTest(item.title) && filterTest(item.category.id);
-    });
-    setList(newList);
-  }, [search, filter]);
+    const newList = menu.filter(
+      (item: item) => searchTest(item) && filterTest(item.category.id)
+    );
+    setList(organize(newList));
+  }, [search, filter, organizer]);
 
   return (
     <StyledItens>
