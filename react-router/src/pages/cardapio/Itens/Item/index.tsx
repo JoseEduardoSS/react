@@ -9,7 +9,7 @@ import {
   Title,
   Type,
 } from './styles';
-import itens from '../itens.json';
+import itens from '../../../../data/menu.json';
 
 type props = typeof itens[0];
 

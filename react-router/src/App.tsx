@@ -1,6 +1,7 @@
-import Menu from './pages/menu';
-import { GlobalStyle } from './GlobalStyle';
-import { ContextProvider } from './common/context/context';
+import { GlobalStyle } from "./GlobalStyle";
+import { ContextProvider } from "./common/context/context";
+import AppRouter from "./routes";
+import Menu from "./components/menu";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <ContextProvider>
         <GlobalStyle />
         <Menu />
+        <AppRouter />
       </ContextProvider>
     </div>
   );

@@ -8,19 +8,6 @@ import {
 } from '../../styles/variables';
 import { desktop_md, desktop_sm, desktop_xsm } from '../../styles/breakpoints';
 
-export const MenuStyled = styled.nav`
-  padding: 20px ${paddingH};
-  @media (max-width: ${desktop_xsm}) {
-    padding: 20px ${paddingHMobile};
-  }
-  @media (min-width: ${desktop_xsm}) and (max-width: ${desktop_sm}) {
-    padding: 20px ${paddingHSm};
-  }
-  @media (min-width: ${desktop_sm}) and (max-width: ${desktop_md}) {
-    padding: 20px ${paddingHMd};
-  }
-`;
-
 export const Header = styled.header`
   align-items: center;
   background-image: url("/src/assets/menu/header.png");
@@ -47,7 +34,7 @@ export const Header = styled.header`
   }
 `;
 
-export const Cardapio = styled.section`
+export const StyledCardapio = styled.section`
   padding: 50px ${paddingH};
   @media (max-width: ${desktop_xsm}) {
     padding: 50px ${paddingHMobile};

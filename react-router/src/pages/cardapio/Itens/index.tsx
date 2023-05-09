@@ -1,6 +1,6 @@
-import menu from './itens.json';
+import menu from '../../../data/menu.json';
 import { StyledItens } from './styles';
-import Item from './item';
+import Item from './Item';
 import {
   useFilterContext,
   useOrganizerContext,
