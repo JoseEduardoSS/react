@@ -7,7 +7,6 @@ import Itens from "./Itens";
 const Cardapio = () => {
   return (
     <main>
-      <Cardapio />
       <Header>
         <div>A casa do código e da massa</div>
       </Header>

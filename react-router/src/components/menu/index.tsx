@@ -1,5 +1,6 @@
 import Logo from "../../assets/logo";
 import { MenuStyled } from "./styles";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   const routes = [
@@ -23,7 +24,7 @@ const Menu = () => {
       <ul>
         {routes.map((route, index) => (
           <li key={index}>
-            <a href={route.to}>{route.label}</a>
+            <Link to={route.to}>{route.label}</Link>
           </li>
         ))}
       </ul>
