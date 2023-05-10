@@ -1,5 +1,6 @@
 import menu from "../../data/menu.json";
-import { Recommended, Recommendeds, Title } from "./styles";
+import { NossaCasa, Recommended, Recommendeds } from "./styles";
+import { Title } from "../../UI/theme";
 
 type dish = typeof menu[0];
 
@@ -23,6 +24,13 @@ const Home = () => {
           </Recommended>
         ))}
       </Recommendeds>
+      <Title> Nossa casa </Title>
+      <NossaCasa>
+        <img src="/src/assets/home/nossa_casa.png" alt="cara aluroni" />
+        <div>
+          Rua Vergueiro, 3185 <br /> <br /> Vila Mariana - SP
+        </div>
+      </NossaCasa>
     </section>
   );
 };

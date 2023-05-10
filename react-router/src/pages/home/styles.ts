@@ -1,11 +1,5 @@
 import styled from "styled-components";
-import { dark, red, redDark } from "../../styles/variables";
-
-export const Title = styled.h1`
-  color: ${dark};
-  font-size: 3rem;
-  margin-bottom: 30px;
-`;
+import { dark, red, redDark } from "../../UI/variables";
 
 export const Recommendeds = styled.div`
   border-radius: 2px;
@@ -19,6 +13,7 @@ export const Recommended = styled.div`
   div {
     width: 300px;
     margin-bottom: 10px;
+
     img {
       border-radius: 8px;
       width: 100%;
@@ -36,6 +31,7 @@ export const Recommended = styled.div`
     padding: 10px 0;
     transition: 0.2s ease;
     width: 100%;
+
     &:hover {
       background-color: ${redDark};
     }
@@ -46,6 +42,7 @@ export const NossaCasa = styled.div`
   margin-bottom: 100px;
   position: relative;
   width: 100%;
+
   img {
     border-radius: 5px;
     width: 100%;

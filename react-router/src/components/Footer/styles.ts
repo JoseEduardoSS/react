@@ -4,31 +4,22 @@ import {
   paddingHMd,
   paddingHMobile,
   paddingHSm,
+  red,
 } from "../../UI/variables";
 import { desktop_md, desktop_sm, desktop_xsm } from "../../UI/breakpoints";
 
-export const StyledHeader = styled.header`
-  align-items: center;
-  background-image: url("/src/assets/header/header.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+export const StyledFooter = styled.footer`
+  background-color: ${red};
   display: flex;
-  height: 300px;
-  padding: 0 ${paddingH};
+  justify-content: flex-end;
+  padding: 10px ${paddingH};
   @media (max-width: ${desktop_xsm}) {
-    padding: 0 ${paddingHMobile};
+    padding: 10px ${paddingHMobile};
   }
   @media (min-width: ${desktop_xsm}) and (max-width: ${desktop_sm}) {
-    padding: 0 ${paddingHSm};
+    padding: 10px ${paddingHSm};
   }
   @media (min-width: ${desktop_sm}) and (max-width: ${desktop_md}) {
-    padding: 0 ${paddingHMd};
-  }
-
-  div {
-    color: white;
-    font-size: 5rem;
-    min-width: 400px;
-    width: 40%;
+    padding: 10px ${paddingHMd};
   }
 `;

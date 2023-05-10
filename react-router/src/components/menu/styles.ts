@@ -6,8 +6,8 @@ import {
   paddingHMd,
   paddingHMobile,
   paddingHSm,
-} from "../../styles/variables";
-import { desktop_md, desktop_sm, desktop_xsm } from "../../styles/breakpoints";
+} from "../../UI/variables";
+import { desktop_md, desktop_sm, desktop_xsm } from "../../UI/breakpoints";
 
 export const MenuStyled = styled.nav`
   display: flex;

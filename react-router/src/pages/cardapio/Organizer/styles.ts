@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { black, blue, grey, lightGrey } from "../../../styles/variables";
+import { black, blue, grey, lightGrey } from "../../../UI/variables";
 
 type active = {
   active: boolean;

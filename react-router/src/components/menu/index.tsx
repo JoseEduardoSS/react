@@ -20,7 +20,9 @@ const Menu = () => {
 
   return (
     <MenuStyled>
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
       <ul>
         {routes.map((route, index) => (
           <li key={index}>

@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { mobile } from "../../../styles/breakpoints";
-import { grey } from "../../../styles/variables";
+import { mobile } from "../../../UI/breakpoints";
+import { grey } from "../../../UI/variables";
 
 export const SearchStyled = styled.div`
   align-items: center;

@@ -1,20 +1,21 @@
-import { Filters, StyledCardapio } from "./styles";
+import { Filters } from "./styles";
 import Search from "./Search";
 import Filter from "./Filter";
 import Organizer from "./Organizer";
 import Itens from "./Itens";
+import { Title } from "../../UI/theme";
 
 const Cardapio = () => {
   return (
-    <StyledCardapio>
-      <h3>Cárdapio</h3>
+    <section>
+      <Title>Cárdapio</Title>
       <Search />
       <Filters>
         <Filter />
         <Organizer />
       </Filters>
       <Itens />
-    </StyledCardapio>
+    </section>
   );
 };
 

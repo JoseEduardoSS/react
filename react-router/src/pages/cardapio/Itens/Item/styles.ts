@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { desktop_xsm, mobile } from "../../../../styles/breakpoints";
-import { darkGrey, red } from "../../../../styles/variables";
+import { desktop_xsm, mobile } from "../../../../UI/breakpoints";
+import { darkGrey, red } from "../../../../UI/variables";
 
 type props = {
   type: string;
