@@ -1,6 +1,5 @@
 import menu from "../../data/menu.json";
 import { Recommended, Recommendeds, Title } from "./styles";
-import Menu from "../../components/menu";
 
 type dish = typeof menu[0];
 

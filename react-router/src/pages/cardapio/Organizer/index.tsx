@@ -1,8 +1,8 @@
-import options from './optionsValues.json';
-import { Option, Options, StyledOrganizer } from './styles';
-import { useState } from 'react';
-import { MdKeyboardArrowDown, MdKeyboardArrowUp } from 'react-icons/md';
-import { useOrganizerContext } from '../../../common/context/context';
+import options from "./optionsValues.json";
+import { Option, Options, StyledOrganizer } from "./styles";
+import { useState } from "react";
+import { MdKeyboardArrowDown, MdKeyboardArrowUp } from "react-icons/md";
+import { useOrganizerContext } from "../../../common/context/context";
 
 type option = typeof options[0];
 
@@ -11,17 +11,17 @@ const Organizer = () => {
 
   const [open, setOpen] = useState(false);
 
-  const name = organizer && options.find(
-    (option: option) => option.value === organizer
-  )?.nome;
+  const name =
+    organizer &&
+    options.find((option: option) => option.value === organizer)?.nome;
 
   return (
     <StyledOrganizer
       onClick={() => setOpen(!open)}
       onBlur={() => setOpen(false)}
-      active={organizer !== ''}
+      active={organizer !== ""}
     >
-      <span>{name || 'Ordenar por:'}</span>
+      <span>{name || "Ordenar por:"}</span>
       {open ? (
         <MdKeyboardArrowUp size={20} />
       ) : (

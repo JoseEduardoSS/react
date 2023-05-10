@@ -1,14 +1,14 @@
-import styled from 'styled-components';
-import {black, blue, grey, lightGrey} from '../../../styles/variables';
+import styled from "styled-components";
+import { black, blue, grey, lightGrey } from "../../../styles/variables";
 
 type active = {
-    active: boolean;
+  active: boolean;
 };
 
 export const StyledOrganizer = styled.button<active>`
   align-items: center;
-  background-color: ${active => active.active ? blue : grey};
-  color: ${buttonProps => buttonProps.active ? '#ffffff' : '#000000'};
+  background-color: ${(active) => (active.active ? blue : grey)};
+  color: ${(buttonProps) => (buttonProps.active ? "#ffffff" : "#000000")};
   border: none;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -27,7 +27,7 @@ export const StyledOrganizer = styled.button<active>`
 `;
 
 export const Options = styled.div<active>`
-  display: ${active => active.active ? 'flex' : 'none'};
+  display: ${(active) => (active.active ? "flex" : "none")};
   position: absolute;
   left: 0;
   flex-direction: column;
@@ -36,7 +36,6 @@ export const Options = styled.div<active>`
 `;
 
 export const Option = styled.div`
-
   align-items: center;
   background-color: ${grey};
   border-top: 2px solid ${lightGrey};
@@ -53,5 +52,4 @@ export const Option = styled.div`
     cursor: pointer;
     color: white;
   }
-  
 `;

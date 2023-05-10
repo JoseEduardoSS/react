@@ -8,8 +8,8 @@ import {
   Tags,
   Title,
   Type,
-} from './styles';
-import itens from '../../../../data/menu.json';
+} from "./styles";
+import itens from "../../../../data/menu.json";
 
 type props = typeof itens[0];
 

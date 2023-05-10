@@ -1,10 +1,10 @@
 export class ContextValue {
-  search = '';
+  search = "";
   setSearch: (value: string) => void = () => {};
 
   filter: null | number = null;
   setFilter: (value: null | number) => void = () => {};
 
-  organizer = '';
+  organizer = "";
   setOrganizer: (value: string) => void = () => {};
 }

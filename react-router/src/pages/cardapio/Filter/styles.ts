@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { blue, grey } from '../../../styles/variables';
+import styled from "styled-components";
+import { blue, grey } from "../../../styles/variables";
 
 type active = {
   active: boolean;
@@ -14,8 +14,8 @@ export const FilterStyled = styled.div`
 
 export const ButtonStyled = styled.button<active>`
   align-items: center;
-  background-color: ${active => active.active ? blue : grey};
-  color: ${active => active.active ? '#ffffff' : '#000000'};
+  background-color: ${(active) => (active.active ? blue : grey)};
+  color: ${(active) => (active.active ? "#ffffff" : "#000000")};
   border: none;
   border-radius: 4px;
   display: flex;

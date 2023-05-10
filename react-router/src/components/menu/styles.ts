@@ -1,6 +1,13 @@
-import styled from 'styled-components';
-import {dark, darkGrey, paddingH, paddingHMd, paddingHMobile, paddingHSm} from '../../styles/variables';
-import {desktop_md, desktop_sm, desktop_xsm} from '../../styles/breakpoints';
+import styled from "styled-components";
+import {
+  dark,
+  darkGrey,
+  paddingH,
+  paddingHMd,
+  paddingHMobile,
+  paddingHSm,
+} from "../../styles/variables";
+import { desktop_md, desktop_sm, desktop_xsm } from "../../styles/breakpoints";
 
 export const MenuStyled = styled.nav`
   display: flex;
@@ -14,20 +21,24 @@ export const MenuStyled = styled.nav`
   @media (min-width: ${desktop_sm}) and (max-width: ${desktop_md}) {
     padding: 20px ${paddingHMd};
   }
+
   ul {
     align-items: center;
     display: flex;
   }
+
   li {
     list-style-type: none;
     padding: 0 20px;
+
     a {
       color: ${dark};
       cursor: pointer;
       font-size: 24px;
       font-weight: 600;
       text-decoration: none;
-      transition: .2s ease;
+      transition: 0.2s ease;
+
       &:hover {
         color: ${darkGrey};
       }

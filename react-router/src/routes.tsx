@@ -1,17 +1,25 @@
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import Home from './pages/home';
-import Cardapio from './pages/cardapio';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Cardapio from "./pages/cardapio";
+import Menu from "./components/menu";
+import Header from "./components/DefaultPage";
+import DefaultPage from "./components/DefaultPage";
+import Home from "./pages/home";
 
 const AppRouter = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Cardapio />} />
-        <Route path="*" element={<h1>Not Found</h1>} />
-      </Routes>
-    </Router>
+    <main>
+      <Router>
+        <Menu />
+        <Header />
+        <Routes>
+          <Route path="/" element={<DefaultPage />}>
+            <Route index element={<Home />} />
+            <Route path="menu" element={<Cardapio />} />
+          </Route>
+        </Routes>
+      </Router>
+    </main>
   );
-}
+};
 
 export default AppRouter;

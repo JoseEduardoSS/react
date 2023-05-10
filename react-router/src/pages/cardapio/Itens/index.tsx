@@ -1,12 +1,12 @@
-import menu from '../../../data/menu.json';
-import { StyledItens } from './styles';
-import Item from './Item';
+import menu from "../../../data/menu.json";
+import { StyledItens } from "./styles";
+import Item from "./Item";
 import {
   useFilterContext,
   useOrganizerContext,
   useSearchContext,
-} from '../../../common/context/context';
-import { useEffect, useState } from 'react';
+} from "../../../common/context/context";
+import { useEffect, useState } from "react";
 
 type item = typeof menu[0];
 
@@ -18,7 +18,7 @@ const Itens = () => {
   const [list, setList] = useState<item[]>(menu);
 
   function searchTest(item: item) {
-    const regex = new RegExp(search, 'i');
+    const regex = new RegExp(search, "i");
     const searchIn = `${item.title} ${item.description}`;
     return regex.test(searchIn);
   }
@@ -30,14 +30,14 @@ const Itens = () => {
 
   function organize(newList: typeof menu) {
     switch (organizer) {
-    case 'porcao':
-      return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
-    case 'qtd_pessoas':
-      return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
-    case 'preco':
-      return newList.sort((a, b) => (a.price > b.price ? 1 : -1));
-    default:
-      return newList;
+      case "porcao":
+        return newList.sort((a, b) => (a.size > b.size ? 1 : -1));
+      case "qtd_pessoas":
+        return newList.sort((a, b) => (a.serving > b.serving ? 1 : -1));
+      case "preco":
+        return newList.sort((a, b) => (a.price > b.price ? 1 : -1));
+      default:
+        return newList;
     }
   }
 

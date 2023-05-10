@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {dark, red, redDark} from '../../styles/variables';
+import styled from "styled-components";
+import { dark, red, redDark } from "../../styles/variables";
 
 export const Title = styled.h1`
   color: ${dark};
@@ -25,7 +25,7 @@ export const Recommended = styled.div`
     }
   }
 
- button {
+  button {
     background-color: ${red};
     border: none;
     border-radius: 5px;
@@ -34,7 +34,7 @@ export const Recommended = styled.div`
     font-size: 1.2rem;
     font-weight: bold;
     padding: 10px 0;
-    transition: .2s ease;
+    transition: 0.2s ease;
     width: 100%;
     &:hover {
       background-color: ${redDark};
