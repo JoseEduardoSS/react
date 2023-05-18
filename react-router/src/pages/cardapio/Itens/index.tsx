@@ -7,6 +7,7 @@ import {
   useSearchContext,
 } from "../../../common/context/context";
 import { useEffect, useState } from "react";
+import {Menu} from '../../../types/Dish';
 
 type item = typeof menu[0];
 
@@ -28,7 +29,7 @@ const Itens = () => {
     return true;
   }
 
-  function organize(newList: typeof menu) {
+  function organize(newList: Menu) {
     switch (organizer) {
       case "porcao":
         return newList.sort((a, b) => (a.size > b.size ? 1 : -1));

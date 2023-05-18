@@ -1,19 +1,14 @@
 import {
   Description,
   Image,
-  Portion,
-  Price,
-  Serving,
   StyledItem,
-  Tags,
   Title,
-  Type,
 } from "./styles";
 import itens from "../../../../data/menu.json";
+import {Portion, Price, Serving, Tags, Type} from '../../../../UI/theme';
+import {Dish} from '../../../../types/Dish';
 
-type props = typeof itens[0];
-
-const Item = (props: props) => {
+const Item = (props: Dish) => {
   const { title, description, category, size, serving, price, photo } = props;
   return (
     <StyledItem>

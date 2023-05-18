@@ -1,26 +1,31 @@
 import menu from "../../data/menu.json";
 import { NossaCasa, Recommended, Recommendeds } from "./styles";
 import { Title } from "../../UI/theme";
-
-type dish = typeof menu[0];
+import { useNavigate } from "react-router-dom";
+import { Dish } from "../../types/Dish";
 
 const Home = () => {
   let recommendedDishes = [...menu];
+  const navigate = useNavigate();
 
   recommendedDishes = recommendedDishes
     .sort(() => 0.5 - Math.random())
     .splice(0, 3);
 
+  function redirectDetails(dish: Dish) {
+    navigate(`/dish/${dish.id}`);
+  }
+
   return (
     <section>
       <Title>Recomendações da cozinha</Title>
       <Recommendeds>
-        {recommendedDishes.map((dish: dish) => (
+        {recommendedDishes.map((dish: Dish) => (
           <Recommended key={dish.id}>
             <div>
               <img src={dish.photo} alt={dish.title} />
             </div>
-            <button>Ver mais</button>
+            <button onClick={() => redirectDetails(dish)}>Ver mais</button>
           </Recommended>
         ))}
       </Recommendeds>

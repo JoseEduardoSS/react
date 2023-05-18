@@ -5,6 +5,7 @@ export const paddingHMd = "200px";
 
 export const dark = "#242536";
 export const darkGrey = "#92929d";
+export const darkestGrey = "#70707b";
 export const grey = "#e4e4e4";
 export const black = "#4c4d5e";
 export const lightGrey = "#f6f6f6";

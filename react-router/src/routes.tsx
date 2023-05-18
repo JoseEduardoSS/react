@@ -6,6 +6,7 @@ import Home from "./pages/home";
 import About from "./pages/about";
 import Footer from "./components/Footer";
 import NotFound from "./pages/notFound";
+import Dish from "./pages/dish";
 
 const AppRouter = () => {
   return (
@@ -19,6 +20,7 @@ const AppRouter = () => {
             <Route path="about" element={<About />} />
           </Route>
           <Route path="*" element={<NotFound />} />
+          <Route path="dish/:id" element={<Dish />} />
         </Routes>
         <Footer />
       </Router>
