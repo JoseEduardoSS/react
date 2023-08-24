@@ -48,7 +48,7 @@ const AdministracaoRestaurantes = () => {
               <TableCell>{restaurante.nome}</TableCell>
               <TableCell>
                 [{" "}
-                <Link to={`/admin/restaurante/${restaurante.id}`}>Editar</Link>{" "}
+                <Link to={`/admin/restaurantes/${restaurante.id}`}>Editar</Link>{" "}
                 ]
               </TableCell>
               <TableCell>
