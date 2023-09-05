@@ -1,9 +1,9 @@
 import { useSetRecoilState } from "recoil";
 import { IEvento } from "../../interfaces/IEvento";
-import { listaDeEventosState } from "../atom";
+import {listaEventosState} from "../atom";
 
 const useAtualizarEvento = () => {
-  const setListaEventos = useSetRecoilState<IEvento[]>(listaDeEventosState);
+  const setListaEventos = useSetRecoilState<IEvento[]>(listaEventosState);
   return (evento: IEvento) =>
     setListaEventos((listaAntiga) => {
       const index = listaAntiga.findIndex((evt) => evt.id === evento.id);

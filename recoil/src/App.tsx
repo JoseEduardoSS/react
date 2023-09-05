@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./App.module.scss";
 import Card from "./components/Card";
 import Formulario from "./components/Formulario";
@@ -7,7 +7,6 @@ import ListaDeEventos from "./components/ListaDeEventos";
 import { RecoilRoot } from "recoil";
 
 function App() {
-
   return (
     <RecoilRoot>
       <div className={style.App}>
@@ -17,8 +16,7 @@ function App() {
           </Card>
           <hr />
           <Card>
-            <ListaDeEventos
-            />
+            <ListaDeEventos />
           </Card>
         </div>
         <div>
