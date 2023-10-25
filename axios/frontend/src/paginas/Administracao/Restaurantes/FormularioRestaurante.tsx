@@ -7,6 +7,8 @@ import http from "../../../http";
 const FormularioRestaurante = () => {
   const params = useParams<{ id: string }>();
 
+  const [nomeRestaurante, setNomeRestaurante] = useState<string>("");
+
   useEffect(() => {
     if (params.id) {
       http
@@ -15,8 +17,7 @@ const FormularioRestaurante = () => {
         .catch((error) => console.log(error));
     }
   }, [params]);
-
-  const [nomeRestaurante, setNomeRestaurante] = useState<string>("");
+  
 
   const aoSubmeter = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
